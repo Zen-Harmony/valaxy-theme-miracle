@@ -1,0 +1,123 @@
+/**
+ * 从旧框架主题迁移的样式
+ */
+
+// 按钮样式
+.vp-button {
+  border-radius: var(--va-border-radius-3) !important;
+}
+
+.vp-button.medium.alt {
+  background-color: var(--va-c-gray-2) !important;
+
+  &:hover {
+    background-color: var(--va-c-bg-elv) !important;
+  }
+}
+
+// 文章框样式
+.vp-link.no-icon.vp-feature {
+  border-radius: var(--va-border-radius-1);
+  border: 1px solid var(--va-c-divider);
+
+  .icon {
+    border-radius: var(--va-border-radius-2);
+  }
+
+  article.box h2 {
+    font-size: 24px;
+  }
+}
+
+// 文档样式
+.va-doc {
+  padding-top: 64px;
+}
+
+// 标题样式
+.va-home {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--va-font-family-mono), var(--va-font-family-base);
+  }
+}
+
+.va-home h2 {
+  margin-bottom: 30px;
+}
+
+main .vp-doc h2,
+.styled-h2 {
+  background: linear-gradient(var(--va-c-brand-soft), var(--va-c-brand-soft)) no-repeat center bottom / 100% .7rem;
+  display: inline-block;
+}
+
+// 链接样式
+main .vp-doc a {
+  background: linear-gradient(var(--va-c-brand-soft), var(--va-c-brand-soft)) no-repeat center bottom / 100% 2px;
+  text-decoration: none;
+  padding: 1px 4px;
+  transition: var(--va-transition-time);
+}
+
+main .vp-doc a:hover {
+  border-radius: var(--va-border-radius-4);
+  background: linear-gradient(var(--va-c-brand-soft), var(--va-c-brand-soft)) no-repeat center bottom / 100% 100%;
+}
+
+// 小字体样式
+small {
+  display: inline-block;
+  line-height: 1.4 !important;
+  vertical-align: middle;
+}
+
+// 页脚样式
+footer.va-footer {
+  border-top: 0 !important;
+  margin-top: 50px;
+  font-family: var(--va-font-family-mono);
+  opacity: .8;
+
+  a {
+    color: var(--va-c-brand-1);
+
+    &:hover {
+      color: var(--va-c-brand-2) !important
+    }
+  }
+}
+
+.va-doc-footer {
+  display: none;
+}
+
+// 自定义块样式
+.custom-block {
+  background-color: transparent !important;
+  padding: 0px 0px 0px 16px;
+  border-radius: 0% !important;
+
+  p {
+    margin: 0px !important;
+  }
+}
+
+.custom-block.tip {
+  border-left: 2px solid var(--va-c-green-2);
+  color: var(--va-c-green-2);
+}
+
+.custom-block.warning {
+  border-left: 2px solid var(--va-c-yellow-2);
+  color: var(--va-c-yellow-2);
+}
+
+.custom-block.danger {
+  border-left: 2px solid var(--va-c-red-2);
+  color: var(--va-c-red-2);
+}

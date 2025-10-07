@@ -1,0 +1,22 @@
+// 更新 vars.scss 文件
+@use 'sass:map';
+
+// common
+$common: () !default;
+$common: map.merge((), $common);
+
+// palette
+$light: (
+  'c-brand': '#b4befe',
+  'c-link': 'var(--st-c-brand)',
+  'c-text': '#101820',
+) !default;
+$light: map.merge((), $light);
+
+$dark: (
+  'c-text': '#f0f8ff',
+) !default;
+$dark: map.merge((), $dark);
+
+$z-index: () !default;
+$z-index: map.merge((), $z-index);
